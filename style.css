@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400,700&display=swap");
+
+:root {
+  --primary-orange: hsl(35, 77%, 62%);
+  --primary-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--off-white);
+}
+.main {
+  height: 80vh;
+  width: 60%;
+  margin: auto;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+}
+.links {
+  padding-right: 2px;
+}
+.links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 20px;
+}
+.links ul li {
+  list-style: none;
+}
+.links ul li a {
+  text-decoration: none;
+  color: var(--grayish-blue);
+}
+.links ul li a:hover {
+  color: var(--primary-red);
+}
+/*end of navbar*******************************************************************/
+.middle-container {
+  width: 100%;
+  height: 50vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.left {
+  flex: 2;
+  background-color: violet;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-above {
+  background-color: black;
+  min-height: 24vh;
+  width: 100%;
+}
+.image-above img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-below-image {
+  background-color: yellow;
+  min-height: 24vh;
+  width: 100%;
+}
+
+.text-below-image {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.right-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.right-text p {
+  color: var(--grayish-blue);
+}
+
+button {
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 30px;
+  background-color: var(--dark-blue);
+  color: var(--off-white);
+  border: none;
+  cursor: pointer;
+}
+.right {
+  flex: 1;
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+.right > h1 {
+  color: var(--primary-orange);
+}
+
+.right h2 {
+  color: var(--off-white);
+  font-size: 1.2rem;
+}
+
+.right h2:hover {
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+.right p {
+  color: var(--grayish-blue);
+}
+
+.borders {
+  border-top: 1px solid var(--grayish-blue);
+  border-bottom: 1px solid var(--grayish-blue);
+  margin: 10px 0 10px 0;
+  padding: 10px 0 10px 0;
+}
+
+.bottom-container {
+  background-color: red;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 33%;
+  border: 2px solid black;
+}
+
+.image {
+  width: 70%;
+  height: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--grayish-blue);
+}
+
+.middle-text {
+  color: var(--dark-blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.middle-text:hover {
+  color: var(--primary-orange);
+}
+
+.bottom-text {
+  color: var(--grayish-blue);
+}
+.two {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 33%;
+  border: 2px solid black;
+}
+
+.three {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 33%;
+  border: 2px solid black;
+}
